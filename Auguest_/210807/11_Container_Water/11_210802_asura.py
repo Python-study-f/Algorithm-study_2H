@@ -18,7 +18,7 @@ class Solution(object):
 
 # 풀이 2 - Two Point 접근
 # O(N) 방식으로, Brute Force 보다 시간을 덜 잡아 먹음
-
+# Two Point 다른 문제 및 해법은 제 노션 참고 https://www.notion.so/jjongdev/Tuple-Two-point-5d9183176ce54a62b5a44f7bb496834b
 class Solution(object):
     def maxArea(self, height):
         max_area = 0
