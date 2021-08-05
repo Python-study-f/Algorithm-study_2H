@@ -18,11 +18,5 @@ print(max(dp))
 1. 마시지 않거나,
 2. 지금꺼 마시고, 전전꺼 total 마시거나
 3. 지금꺼 마시고, 전에꺼 마시고, 전전전꺼 total 마시고
-
-인덱스 에러 이 부분에서 왜 뜨는 걸까요....
-data = []
-
-for _ in range(N):
-    data.append(int(input()))
 """
 
