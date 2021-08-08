@@ -1,0 +1,2 @@
+	
+	7675_통역사 성경이 - https://swexpertacademy.com/main/code/problem/problemDetail.do?problemLevel=3&contestProbId=AWqPvqoqSLQDFAT_&categoryId=AWqPvqoqSLQDFAT_&categoryType=CODE&problemTitle=&orderBy=SUBMIT_COUNT&selectCodeLang=ALL&select-1=3&pageSize=10&pageIndex=7
