@@ -2,7 +2,7 @@ from collections import deque
 
 n, m = map(int, input().split())
 a = [list(map(int, list(input()))) for _ in range(n)]
-# d[i][j][k]: (0, 0)에서 (i - 1, j - 1)까지 벽을 부순 횟수가 k번 일때의 최단 거리
+# dist[i][j][k]: (0, 0)에서 (i, j)까지 벽을 부순 횟수가 k번 일때의 최단 거리
 dist = [[[-1] * 2 for _ in range(m)] for _ in range(n)]
 q = deque()
 q.append((0, 0, 0))
