@@ -23,17 +23,17 @@ class Solution:
 
 
 # TestCase를 작성
-class MainTest(unittest.TestCase):
-    def test(self):
-        solution = Solution()
-        gas = [1, 2, 3, 4, 5]
-        cost = [3, 4, 5, 1, 2]
-        expected = solution.canCompleteCircuit(gas, cost)
-        result = 3
-
-        self.assertEqual(expected, result)
-
-
-# unittest를 실행
-if __name__ == '__main__':
-    unittest.main()
+# class MainTest(unittest.TestCase):
+#     def test(self):
+#         solution = Solution()
+#         gas = [1, 2, 3, 4, 5]
+#         cost = [3, 4, 5, 1, 2]
+#         expected = solution.canCompleteCircuit(gas, cost)
+#         result = 3
+#
+#         self.assertEqual(expected, result)
+#
+#
+# # unittest를 실행
+# if __name__ == '__main__':
+#     unittest.main()
