@@ -12,7 +12,7 @@ for i in range(a):
                 ans.append(count)
                 count = 0
         else:
-            if word[0].isupper() and word.isalpha() and word[1:].sislower():
+            if word[0].isupper() and word.isalpha() and word[1:].islower():
                 count += 1
     print('#{}'.format(i+1),end=" ")
     print(*ans)
