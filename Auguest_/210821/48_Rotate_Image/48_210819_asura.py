@@ -1,9 +1,10 @@
-matrix = [[1,2,3],[4,5,6],[7,8,9]]
 
-for idx, arr in enumerate(zip(*matrix[::-1])):
-    matrix[idx] = list(arr)
+class Solution(object):
+    def rotate(self, matrix):
+        for idx, arr in enumerate(zip(*matrix[::-1])):
+            matrix[idx] = list(arr)
 
-print(matrix)
+        print(matrix)
 
 # tmp = []
 #
