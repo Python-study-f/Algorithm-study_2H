@@ -14,7 +14,7 @@ class Solution(object):
         if obstacleGrid[0][0] == 1 or obstacleGrid[-1][-1] == 1:
             return 0
 
-        dp = [[0] * (len(obstacleGrid[0]) + 1) for _ in range(len(obstacleGrid) + 1)]
+        dp = [[0] * (M + 1) for _ in range(N + 1)]
         dp[1][1] = 1
 
         for i in range(1, N + 1):
