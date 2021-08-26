@@ -11,18 +11,6 @@ class LinkedList:
         self.head.next = self.tail
         self.tail.prev = self.head
 
-    # def __str__(self):
-    #     print_list = '[ '
-    #     node = self.head
-    #     while True:
-    #         print_list += str(node.data)
-    #         if node.next.data == -2:
-    #             break
-    #         node = node.next
-    #         print_list += ', '
-    #     print_list += ' ]'
-    #     return print_list
-
     def insertNode(self, data):
         prev_node = self.tail.prev
         new_node = Node(data)
@@ -122,7 +110,4 @@ def solution(n, k, cmd):
     for node in deleted:
         ans[node.data] = "X"
     return "".join(ans)
-
-print(solution(	8, 2, ["D 2", "C", "U 3", "C", "D 4", "C", "U 2", "Z", "Z", "U 1", "C"]))
-
 
