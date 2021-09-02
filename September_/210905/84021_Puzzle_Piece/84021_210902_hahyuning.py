@@ -1,6 +1,6 @@
 from collections import deque
 
-# 1. 블록 나누기
+# 블록 나누기
 def bfs(x, y, a, visited, num):
     n = len(a)
     dx = [-1, 1, 0, 0]
@@ -30,7 +30,7 @@ def bfs(x, y, a, visited, num):
 
     return res, visited
 
-# 블록 회전
+# 퍼즐 회전
 def rotation(a):
     n = len(a)
     m = len(a[0])
