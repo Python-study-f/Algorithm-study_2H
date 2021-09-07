@@ -1,4 +1,10 @@
+"""
+https://johnyejin.tistory.com/129 순차적으로 생각하는 방향이 좋았음
+https://whwl.tistory.com/104
+https://velog.io/@ju_h2/Python-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-level2-%ED%9B%84%EB%B3%B4%ED%82%A4
+정리 잘해둔 블로그
 
+"""
 from itertools import combinations
 from collections import  deque
 
