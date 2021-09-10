@@ -63,7 +63,7 @@ def solution(board, r, c):
             simulate(x1, y1, idx + 1, cnt + bfs(sx, sy, x1, y1), order, path + [x1, y1])
             simulate(x2, y2, idx + 1, cnt + bfs(sx, sy, x2, y2), order, path + [x2, y2])
 
-        # 두 번재 블록을 찾는 경우
+        # 두 번째 블록을 찾는 경우
         else:
             x1, y1, x2, y2 = numbers[num]
             if (sx, sy) == (x1, y1):
