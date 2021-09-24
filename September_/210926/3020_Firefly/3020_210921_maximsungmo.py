@@ -1,32 +1,27 @@
 # 개똥벌레 3090 백준
-
-bottom = []
-top = []
-
 n, h = map(int, input().split())
 
-memo = {}
-for _ in range(h):
-    memo.setdefault(_ + 1, 0)
+stone_top_map = [0] * (h + 1)
+stone_bottom_map = [0] * (h + 1)
+result = [0] * (h + 1)
 
-
-def check(height, is_even):
-    if not is_even:
-        for hol in range(1, height + 1, +1):
-            memo[hol] = memo[hol] + 1
-    else:
-        for zzak in range(h - height, h, +1):
-            memo[zzak] = memo[zzak] + 1
-
-
-for i in range(n):
+for i in range(1, n + 1):
     k = int(input())
     if i % 2 == 0:
-        check(k, True)
+        stone_top_map[h - k + 1] += 1
     else:
-        check(k, False)
+        stone_bottom_map[k] += 1
 
-sorted_dict = sorted(memo.items(), key = lambda item: item[1])
-print(sorted_dict)
+for i in range(2, h + 1, +1):
+    stone_top_map[i] += stone_top_map[i - 1]
+for i in range(h - 1, 0, -1):
+    stone_bottom_map[i] += stone_bottom_map[i + 1]
 
-print(memo)
+for i in range(1, h + 1):
+    result[i] = stone_top_map[i] + stone_bottom_map[i]
+
+result = result[1:]
+min_num = min(result)
+min_num_count = result.count(min_num)
+print(result)
+print(min_num, min_num_count)
