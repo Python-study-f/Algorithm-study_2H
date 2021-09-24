@@ -1,4 +1,8 @@
 # 개똥벌레 3090 백준
+
+# 첫 번째 풀이, 누적합
+# pypy3 통과
+# python3 시간초과...
 n, h = map(int, input().split())
 
 stone_top_map = [0] * (h + 1)
