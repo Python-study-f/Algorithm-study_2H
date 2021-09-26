@@ -41,7 +41,7 @@ def bfs(i, j, value, case):
                 0 <= nx < n
                 and 0 <= ny < n
                 and visited[nx][ny] == False
-                and check_color_normal(arr[nx][ny], value, case)
+                and check_color(arr[nx][ny], value, case)
             ):
 
                 visited[nx][ny] = True
